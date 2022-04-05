@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import presentationImagen from "../../assets/images/presentation.png";
 import Header from "../../components/header";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const HomeScreen = () => (
   <Fragment>
@@ -30,13 +31,14 @@ const HomeScreen = () => (
                   </span>
                 </div>
                 <div>
-                  <Button
-                    className="button__maxWidth_300"
+                  <Link
+                    to="/register"
+                    className="btn btn-outline-light btn-lg"
                     variant="outline-light "
                     size="lg"
                   >
                     Register for free Now
-                  </Button>
+                  </Link>
                 </div>
               </div>
             </Col>
