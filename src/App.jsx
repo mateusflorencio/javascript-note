@@ -1,6 +1,9 @@
-import React from "react";
-import Header from "./components/header";
+import React, { Fragment } from "react";
+import AppRoutes from "./routes";
 
-const App = () => <Header />;
-
+const App = () => (
+  <Fragment>
+    <AppRoutes />
+  </Fragment>
+);
 export default App;

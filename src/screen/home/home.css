@@ -1,0 +1,11 @@
+.home {
+  height: calc(100vh - 70px);
+  background-color: #8a2be2;
+  background-image: linear-gradient(#8a2be2, #40334d);
+}
+.row {
+  height: calc(100vh - 70px);
+}
+.button__maxWidth_300 {
+  max-width: 300px;
+}
