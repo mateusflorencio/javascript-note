@@ -7,7 +7,7 @@ import LoginScreen from "./screen/auth/login";
 import NoteScreen from "./screen/notes/index";
 import UserEditScreen from "./screen/users/edit";
 
-//import PrivateRoute from "./components/auth/private_router";
+import PrivateRoute from "./components/auth/private_router";
 
 export default function AppRoutes() {
   return (
@@ -16,8 +16,24 @@ export default function AppRoutes() {
         <Route exact path="/" element={<HomeScreen />} />
         <Route exact path="/register" element={<RegisterScreen />} />
         <Route exact path="/login" element={<LoginScreen />} />
-        <Route exact path="/notes" element={<NoteScreen />} />
-        <Route exact path="/user/edit" element={<UserEditScreen />} />
+        <Route
+          exact
+          path="/notes"
+          element={
+            <PrivateRoute>
+              <NoteScreen />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          exact
+          path="/user/edit"
+          element={
+            <PrivateRoute>
+              <UserEditScreen />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

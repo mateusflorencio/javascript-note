@@ -1,28 +1,11 @@
-import React, { Component } from "react";
-import { formatPostcssSourceMap } from "vite";
-import { Route, useNavigate } from "react-router-dom";
+import React from "react";
+import { Navigate, Route, useNavigate } from "react-router-dom";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
-  const navigation = useNavigate();
-  const onNavigation = false;
-  React.useEffect(() => {
-    if (onNavigation) {
-      navigation("/login");
-    }
-  });
+const PrivateRoute = ({ children }) => {
+  if (!localStorage.getItem("user")) {
+    return <Navigate to="/login" replace />;
+  }
 
-  return (
-    <Route
-      {...rest}
-      render={(props) =>
-        localStorage.getItem("user") ? (
-          <Component {...props} />
-        ) : (
-          navigation(true)
-        )
-      }
-    />
-  );
+  return children;
 };
-
 export default PrivateRoute;
