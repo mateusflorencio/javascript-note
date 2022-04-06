@@ -37,7 +37,7 @@ function Header() {
           </li>
         </ul>
         <div className="nav-icon " onClick={handleClick}>
-          <i class={click ? "  bi bi-x-square-fill " : "bi bi-list"}></i>
+          <i className={click ? "  bi bi-x-square-fill " : "bi bi-list"}></i>
         </div>
       </nav>
     </div>

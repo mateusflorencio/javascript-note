@@ -1,0 +1,23 @@
+.body {
+  background-color: blueviolet;
+  height: calc(100vh - 70px);
+}
+
+.form-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}

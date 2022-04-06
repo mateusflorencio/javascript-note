@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import presentationImagen from "../../assets/images/presentation.png";
 import Header from "../../components/header";
