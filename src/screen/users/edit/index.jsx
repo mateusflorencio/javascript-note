@@ -1,5 +1,10 @@
 import React, { Fragment } from "react";
+import { HeaderLogged } from "../../../components/header_logged/header_logged";
 
-const UserEditScreen = () => <Fragment>Hello Word UserEditScreen</Fragment>;
+const UserEditScreen = () => (
+  <Fragment>
+    <HeaderLogged />
+  </Fragment>
+);
 
 export default UserEditScreen;
