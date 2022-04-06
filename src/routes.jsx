@@ -7,6 +7,8 @@ import LoginScreen from "./screen/auth/login";
 import NoteScreen from "./screen/notes/index";
 import UserEditScreen from "./screen/users/edit";
 
+//import PrivateRoute from "./components/auth/private_router";
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
